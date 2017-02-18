@@ -13,14 +13,9 @@
 
 
 ##3. plugin.yml Configuration
- 1. name: ProjectName
- 2. main: packagename.FirstClass
- 3. version: 0.1
- 4. author: YourUsername
- 5. commands:
-  ```ruby
-  require meme;
-  ```
+```javascript
+var test;
+```
   
  
 
