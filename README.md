@@ -15,10 +15,10 @@
 ##3. plugin.yml Configuration
  1. name: ProjectName
  2. main: packagename.FirstClass
- 3. version: X.X
+ 3. version: 0.1
  4. author: YourUsername
  5. commands:
-  +commandname:
+  5.1 commandname:
    1.description: Simulates a pingpong match
    2.usage: `/<command>`
  
