@@ -31,10 +31,10 @@ commands:
   1. Check if arguments
     *`if (args.length == 1) {`
   2. Check if argument was a player (for this example)
-    ```Java
+```Java
       for (Player p : Bukkit.getServer().getOnlinePlayers()) {
         if (p.getName().equalsIgnoreCase(args[0])) {
           p.setHealth(p.getMaxHealth());
         }
       }
-    ```
+```
