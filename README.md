@@ -18,7 +18,9 @@
  3. version: 0.1
  4. author: YourUsername
  5. commands:
-  1. ping
+  1. ping:
+   *description: simulates a ping-pong match
+  
  
 
 ##4. Event Class
