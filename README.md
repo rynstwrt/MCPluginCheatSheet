@@ -1,4 +1,4 @@
-#Minecraft Server Plugin Cheat Sheet <img src="https://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c5/Grass.png" width="48">
+#Minecraft Server Plugin Cheat Sheet <img src="https://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c5/Grass.png" width="42">
 
 ##1. Naming Conventions
  * Package Name: websiteending/me.name/websiteurl.projectname
