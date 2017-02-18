@@ -56,4 +56,8 @@ commands:
     * `this.getConfig().options().copyDefaults(true);`
   3. Save the config (put in onDisable() too)
     * `saveConfig();`
+  4. How to get data
+    * `configGetter.getConfig().getInt("playervisits");`
+  5. How to set data
+    * `configGetter.getConfig().set("playervisits", configGetter.getConfig().getInt("playervisits") + 1);`
   
