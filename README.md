@@ -23,6 +23,7 @@ commands:
 ```
  
 ##4. Event Class
+ * Start Listener (in first class) `onEnable() {new <listenerclassname>(this);}`
  * Implement the listener class: `public class <listenerclassname> implements Listener {}`
  * Start with constructor: `public <listenerclassname>(<firsclass> plugin) {plugin.getServer().getPluginManager().registerEvents(this, plugin)}`
  * Events are then implemented under a @EventHandler metadata tag as `public void <functionName>(<eventHere> e) {}`
@@ -47,3 +48,6 @@ commands:
         plr.sendMessage("No player found!");
       }
 ```
+
+##6. Configuration Options (config.yml)
+  
