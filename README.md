@@ -32,9 +32,17 @@ commands:
     *`if (args.length == 1) {`
   2. Check if argument was a player (for this example)
 ```Java
+      
+      boolean plrFound = false;
+
       for (Player p : Bukkit.getServer().getOnlinePlayers()) {
         if (p.getName().equalsIgnoreCase(args[0])) {
+          plrFound = true;
           p.setHealth(p.getMaxHealth());
         }
+      }
+      
+      if (!plrFound) {
+        plr.sendMessage("No player found!");
       }
 ```
