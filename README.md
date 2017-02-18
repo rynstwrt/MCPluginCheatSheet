@@ -39,6 +39,7 @@ commands:
         if (p.getName().equalsIgnoreCase(args[0])) {
           plrFound = true;
           p.setHealth(p.getMaxHealth());
+          break;
         }
       }
       
