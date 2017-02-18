@@ -1,16 +1,14 @@
-# MCPluginCheatSheet
+#Minecraft Server Plugin Cheat Sheet
 
 ##1. Naming Conventions
  * Package Name: websiteending/me.name/websiteurl.projectname
  * Class Name: ProjectNameCamelCase.java
-
 
 ##2. Initial Functions
 ####All must be below a @Overide metadata tag
  * `public void onEnable() {}`
  * `public void onDisable() {}`
  * `public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {return false;}`
-
 
 ##3. plugin.yml Configuration
 ```yaml
@@ -21,11 +19,9 @@ author: YourName
 commands:
   ping:
     description: simulates a ping-pong game
-    usage: /ping
+    usage: /<command>
 ```
-  
  
-
 ##4. Event Class
  * Implement the listener class: `public class <listenerclassname> implements Listener {}`
  * Start with constructor: `public <listenerclassname>(<firsclass> plugin) {plugin.getServer().getPluginManager().registerEvents(this, plugin)}`
