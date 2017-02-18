@@ -18,7 +18,7 @@
  3. version: X.X
  4. author: YourUsername
  5. commands:
-  -commandname:
+  *commandname:
    1.description: Simulates a pingpong match
    2.usage: `/<command>`
  
