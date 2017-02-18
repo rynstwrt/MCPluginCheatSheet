@@ -17,10 +17,10 @@
  2. main: packagename.FirstClass
  3. version: X.X
  4. author: YourUsername
- 5. Commands
-  -ping
-   +description: Simulates a pingpong match
-   +usage: /<command>
+ 5. commands:
+  -commandname:
+   1.description: Simulates a pingpong match
+   2.usage: `/<command>`
  
 
 ##4. Event Class
