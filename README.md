@@ -26,3 +26,15 @@ commands:
  * Implement the listener class: `public class <listenerclassname> implements Listener {}`
  * Start with constructor: `public <listenerclassname>(<firsclass> plugin) {plugin.getServer().getPluginManager().registerEvents(this, plugin)}`
  * Events are then implemented under a @EventHandler metadata tag as `public void <functionName>(<eventHere> e) {}`
+
+##5. Command Arguments
+  1. Check if arguments
+    *`if (args.length == 1) {`
+  2. Check if argument was a player (for this example)
+    ```Java
+      for (Player p : Bukkit.getServer().getOnlinePlayers()) {
+        if (p.getName().equalsIgnoreCase(args[0])) {
+          p.setHealth(p.getMaxHealth());
+        }
+      }
+    ```
