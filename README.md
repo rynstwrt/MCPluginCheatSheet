@@ -30,7 +30,7 @@ commands:
 
 ##5. Command Arguments
   1. Check if arguments
-    *`if (args.length == 1) {`
+    * `if (args.length == 1) {`
   2. Check if argument was a player (for this example)
 ```Java
       
