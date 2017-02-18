@@ -13,8 +13,15 @@
 
 
 ##3. plugin.yml Configuration
-```javascript
-var test;
+```yaml
+name: ProjectName
+main: packagename.MainClass
+version: 0.1
+author: YourName
+commands:
+  ping:
+    description: simulates a ping-pong game
+    usage: /ping
 ```
   
  
