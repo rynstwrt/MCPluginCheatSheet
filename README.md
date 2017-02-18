@@ -54,6 +54,6 @@ commands:
     * `this.getConfig().addDefault("playervisits", 0)`
   2. Keep config as default
     * `this.getConfig().options().copyDefaults(true);`
-  3. Save the config
+  3. Save the config (put in onDisable() too)
     * `saveConfig();`
   
