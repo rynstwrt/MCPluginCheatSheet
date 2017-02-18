@@ -50,4 +50,10 @@ commands:
 ```
 
 ##6. Configuration Options (config.yml)
+  1. Generate (if not already present) (put in onEnable() function)
+    * `this.getConfig().addDefault("playervisits", 0)`
+  2. Keep config as default
+    * `this.getConfig().options().copyDefaults(true);`
+  3. Save the config
+    * `saveConfig();`
   
