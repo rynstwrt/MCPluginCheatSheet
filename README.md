@@ -18,7 +18,11 @@
  3. version: 0.1
  4. author: YourUsername
  5. commands:
-  1. commandname: description:, alias: and usage:
+  ```
+  ping:
+   description: simulates a ping-pong match.
+   usage: /<command>
+  ```
   
  
 
