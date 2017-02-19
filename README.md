@@ -61,3 +61,10 @@ commands:
   5. How to set data
     * `firstclass.getConfig().set("playervisits", configGetter.getConfig().getInt("playervisits") + 1);`
   
+##7. Advanced Config
+```yaml
+playervisits:
+  player1: 10
+  player2: 100
+  player3: 1337
+```
