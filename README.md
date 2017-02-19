@@ -48,8 +48,13 @@ commands:
         plr.sendMessage("No player found!");
       }
 ```
+##6. Permissions
+  1. Create the permission in the main class
+    * `Permission canBuild = new Permission("myplugin.canbuild");`
+  2. Check if player has a permission
+    * `if (plr.hasPermission("myplugin.canbuild")) {}`
 
-##6. Configuration Options (config.yml)
+##7. Configuration Options (config.yml)
   1. Generate (if not already present) (put in onEnable() function)
     * `this.getConfig().addDefault("playervisits", 0)`
   2. Keep config as default
