@@ -72,5 +72,5 @@ playervisits:
   * Referenced as `this.getConfig().getInt("playervisits.player1");`
   * Set as `plugin.getConfig().set("playervisits.player2", 200);`
   
- 2. Check if a path exists in the config.yml
+2. Check if a path exists in the config.yml
   * `plugin.getConfig().contains("playervisits.player8")`
