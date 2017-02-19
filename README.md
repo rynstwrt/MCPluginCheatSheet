@@ -63,12 +63,12 @@ commands:
   
 ##7. Config Sections and Advanced Use
   1. Sections
-  ```yaml
+```yaml
   playervisits:
     player1: 10
     player2: 100
-    player3: 1337
-  ```
+    player3: 1337 
+```
     * Referenced as `this.getConfig().getInt("playervisits.player1");`
     * Set as `plugin.getConfig().set("playervisits.player2", 200);`  
   2. Check if a path exists in the config.yml
