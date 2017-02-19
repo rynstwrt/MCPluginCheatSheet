@@ -70,7 +70,6 @@ playervisits:
   player3: 1337
 ```
   * Referenced as `this.getConfig().getInt("playervisits.player1");`
-  * Set as `plugin.getConfig().set("playervisits.player2", 200);`
-  
+  * Set as `plugin.getConfig().set("playervisits.player2", 200);`  
 2. Check if a path exists in the config.yml
   * `plugin.getConfig().contains("playervisits.player8")`
