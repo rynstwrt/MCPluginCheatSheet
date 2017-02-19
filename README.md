@@ -62,14 +62,14 @@ commands:
     * `firstclass.getConfig().set("playervisits", configGetter.getConfig().getInt("playervisits") + 1);`
   
 ##7. Config Sections and Advanced Use
-1. Sections
-```yaml
-playervisits:
-  player1: 10
-  player2: 100
-  player3: 1337
-```
-  * Referenced as `this.getConfig().getInt("playervisits.player1");`
-  * Set as `plugin.getConfig().set("playervisits.player2", 200);`  
-2. Check if a path exists in the config.yml
-  * `plugin.getConfig().contains("playervisits.player8")`
+  1. Sections
+  ```yaml
+  playervisits:
+    player1: 10
+    player2: 100
+    player3: 1337
+  ```
+    * Referenced as `this.getConfig().getInt("playervisits.player1");`
+    * Set as `plugin.getConfig().set("playervisits.player2", 200);`  
+  2. Check if a path exists in the config.yml
+    * `plugin.getConfig().contains("playervisits.player8")`
