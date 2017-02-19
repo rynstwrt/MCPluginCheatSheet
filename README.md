@@ -60,16 +60,14 @@ commands:
     * `firstclass.getConfig().getInt("playervisits");`
   5. How to set data
     * `firstclass.getConfig().set("playervisits", configGetter.getConfig().getInt("playervisits") + 1);`
-  
-##7. Config Sections and Advanced Use
-  1. Sections
+  6. Check if something exists in the config
+    * `if (firstclass.getConfig().contains("playervisits.player1") {}`
+  7. Sections
+    * Referenced as `this.getConfig().getInt("playervisits.player1");`
+    * Set as `plugin.getConfig().set("playervisits.player2", 200);`
 ```yaml
   playervisits:
     player1: 10
     player2: 100
     player3: 1337 
-```
-    * Referenced as `this.getConfig().getInt("playervisits.player1");`
-    * Set as `plugin.getConfig().set("playervisits.player2", 200);`  
-  2. Check if a path exists in the config.yml
-    * `plugin.getConfig().contains("playervisits.player8")`
+``` 
