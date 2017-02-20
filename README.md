@@ -80,16 +80,8 @@ commands:
 ##8. Scheduler
   1. Set up `Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable(<run function>) {}, startupTimeInTicksL, repeatingTimeInTicksL`
   2. Times are in ticks (20 ticks = 1 second)
-  3. In total, will look like this
-	```Java
-	Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-	  @Overide
-	  public void run() {
-	    <code here runs every second>
-	  }
-	}, 0L, 1*20)
-	```
-  4. It effectively acts like a while loop, so countdowns are scheduled as so:
+  3. Use `scheduleSyncRepeatingTask` for loops, and `scheduleSyncDelayedTask` for waits (like cooldowns)
+  4. In total, a countdown will look like this:
 ```Java
 if (cmd.getName().equalsIgnoreCase("count3")) {
 				num = 3;
