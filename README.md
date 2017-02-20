@@ -79,7 +79,8 @@ commands:
 
 ##8. Scheduler
   1. Set up `Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable(<run function>) {}, startupTimeInTicksL, repeatingTimeInTicksL`
-  2. In total, will look like this
+  2. Times are in ticks (20 ticks = 1 second)
+  3. In total, will look like this
 ```Java
 Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
   @Overide
