@@ -70,6 +70,8 @@ commands:
   7. Sections
     * Referenced as `this.getConfig().getInt("playervisits.player1");`
     * Set as `plugin.getConfig().set("playervisits.player2", 200);`
+  8. Multiple Configs
+    * Use `FileConfig x = YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), "example.yml"));`
 ```yaml
   playervisits:
     player1: 10
