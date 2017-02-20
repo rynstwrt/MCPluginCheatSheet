@@ -89,3 +89,21 @@ Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
   }
 }, 0L, 1*20)
 ```
+  4. It effectively acts like a while loop, so countdowns are scheduled as so:
+```Java
+if (cmd.getName().equalsIgnoreCase("count3")) {
+				num = 3;
+				Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+					@Override
+					public void run() {
+						if (num > 0) {
+							Bukkit.broadcastMessage("" + num);
+						} else if (num == 0) {
+							Bukkit.broadcastMessage("Go!");
+						}	
+            num--;
+					}		
+				}, 0L, 1*20L);	
+				return true;
+			}
+```
