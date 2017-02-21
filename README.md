@@ -20,6 +20,20 @@ commands:
   ping:
     description: simulates a ping-pong game
     usage: /<command>
+    
+permissions:
+  myplugin.*:
+    description: Full access to all of my plugin's commands
+    children:
+      myplugin.reload: true
+      myplugin.anybodycanuse: true
+    default: op
+  myplugin.reload:
+    description: Reloads my plugin.
+    default: op
+  myplugin.anybodycanuse:
+    description: Just a test that any guest can use.
+    default: true
 ```
  
 ##4. Event Class
