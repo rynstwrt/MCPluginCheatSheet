@@ -124,3 +124,7 @@ if (cmd.getName().equalsIgnoreCase("count3")) {
   return true;
 }
 ```
+##X. Misc
+  * Keep players in place by teleporting the player to themselves on the `PlayerMoveEvent`
+  * Use the TagAPI to change nametags above player's colors and text
+  
