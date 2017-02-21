@@ -27,6 +27,15 @@ commands:
  * Implement the listener class: `public class <listenerclassname> implements Listener {}`
  * Start with constructor: `public <listenerclassname>(<firsclass> plugin) {plugin.getServer().getPluginManager().registerEvents(this, plugin)}`
  * Events are then implemented under a @EventHandler metadata tag as `public void <functionName>(<eventHere> e) {}`
+ 1. Custom Events
+   * Create new class for the event called "somethingSomethingEvent" that extends Event
+   * Create constuctor that (can) pass this.var = var.
+   * Create other functions needed for your event such as `getWarpLocation()` or `getPlayer()`
+   * Write `private static final HandlerList handlers = new HandlerList();`
+   * Create "getHandlers()" function that returns the handlerslist
+   * Create "getHanderList()" function that returns the handlerslist
+   * Call it in your code when wanted with `Bukkit.getServer().getPluginManager().callEvent(new <yourEventName>())`
+   * Handle the event in your listener class like any other event.
 
 ##5. Command Arguments
   1. Check if arguments
