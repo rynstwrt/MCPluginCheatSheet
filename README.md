@@ -109,18 +109,18 @@ permissions:
   4. In total, a countdown will look like this:
 ```Java
 if (cmd.getName().equalsIgnoreCase("count3")) {
-				num = 3;
-				Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-					@Override
-					public void run() {
-						if (num > 0) {
-							Bukkit.broadcastMessage("" + num);
-						} else if (num == 0) {
-							Bukkit.broadcastMessage("Go!");
-						}	
-            num--;
-					}		
-				}, 0L, 1*20L);	
-				return true;
-			}
+  num = 3;
+  Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+    @Override
+    public void run() {
+      if (num > 0) {
+        Bukkit.broadcastMessage("" + num);
+      } else if (num == 0) {
+        Bukkit.broadcastMessage("Go!");
+      }	
+      num--;
+    }		
+  }, 0L, 1*20L);	
+  return true;
+}
 ```
