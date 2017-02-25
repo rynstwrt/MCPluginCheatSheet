@@ -18,6 +18,7 @@ version: 0.1
 author: YourName
 commands:
   ping:
+    aliases: [png, pingerino]
     description: simulates a ping-pong game
     usage: /<command>
     
