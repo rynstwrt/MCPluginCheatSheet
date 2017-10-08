@@ -1,16 +1,16 @@
-#Minecraft Server Plugin Cheat Sheet <img src="https://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c5/Grass.png" width="42">
+# Minecraft Server Plugin Cheat Sheet <img src="https://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/c5/Grass.png" width="42">
 
-##1. Naming Conventions
+## 1. Naming Conventions
  * Package Name: websiteending/me.name/websiteurl.projectname
  * Class Name: ProjectNameCamelCase.java
 
-##2. Initial Functions
-####All must be below a @Overide metadata tag
+## 2. Initial Functions
+#### All must be below a @Overide metadata tag
  * `public void onEnable() {}`
  * `public void onDisable() {}`
  * `public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {return false;}`
 
-##3. plugin.yml Configuration
+## 3. plugin.yml Configuration
 ```yaml
 name: ProjectName
 main: packagename.MainClass
@@ -37,7 +37,7 @@ permissions:
     default: true
 ```
  
-##4. Event Class
+## 4. Event Class
  * Start Listener (in first class) `onEnable() {new <listenerclassname>(this);}`
  * Implement the listener class: `public class <listenerclassname> implements Listener {}`
  * Start with constructor: `public <listenerclassname>(<firsclass> plugin) {plugin.getServer().getPluginManager().registerEvents(this, plugin)}`
@@ -52,7 +52,7 @@ permissions:
    * Call it in your code when wanted with `Bukkit.getServer().getPluginManager().callEvent(new <yourEventName>())`
    * Handle the event in your listener class like any other event.
 
-##5. Command Arguments
+## 5. Command Arguments
   1. Check if arguments
     * `if (args.length == 1) {`
   2. Check if argument was a player (for this example)
@@ -72,13 +72,13 @@ permissions:
         plr.sendMessage("No player found!");
       }
 ```
-##6. Permissions
+## 6. Permissions
   1. Create the permission in the main class
     * `Permission canBuild = new Permission("myplugin.canbuild");`
   2. Check if player has a permission
     * `if (plr.hasPermission("myplugin.canbuild")) {}`
 
-##7. Configuration Options (config.yml)
+## 7. Configuration Options (config.yml)
   1. Generate (if not already present) (put in onEnable() function)
     * `this.getConfig().addDefault("playervisits", 0)`
   2. Keep config as default
@@ -103,7 +103,7 @@ permissions:
     player3: 1337 
 ``` 
 
-##8. Scheduler
+## 8. Scheduler
   1. Set up `Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable(<run function>) {}, startupTimeInTicksL, repeatingTimeInTicksL`
   2. Times are in ticks (20 ticks = 1 second)
   3. Use `scheduleSyncRepeatingTask` for loops, and `scheduleSyncDelayedTask` for waits (like cooldowns)
@@ -125,7 +125,7 @@ if (cmd.getName().equalsIgnoreCase("count3")) {
   return true;
 }
 ```
-##X. Misc
+## 9. Misc
   * Keep players in place by teleporting the player to themselves on the `PlayerMoveEvent`
   * Use the TagAPI to change nametags above player's colors and text
   
